@@ -14,7 +14,8 @@
       "exportedResources": [
         "log4j2.xml",
         "cicd.xml",
-        "application-types.xml"
+        "application-types.xml",
+        "properties/dev-deploy.properties"
       ]
     }
   },
