@@ -22,49 +22,26 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>properties-maven-plugin</artifactId>
-				<version>1.0.0</version>
-				<executions>
-					<execution>
-						<phase>initialize</phase>
-						<goals>
-							<goal>read-project-properties</goal>
-						</goals>
-						<configuration>
-							<files>
-								<file>src/main/resources/properties/dev-deploy.properties</file>
-							</files>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
+				<version>3.3.2</version>
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<uri>${mule.platform.base_uri}</uri>
-						<muleVersion>${cloudhub.mule.version}</muleVersion>
-						<applicationName>${cloudhub.application.name}</applicationName>
-						<environment>${cloudhub.environment}</environment>
-						<objectStoreV2>true</objectStoreV2>
-						<region>${cloudhub.region}</region>
-						<workers>${mule.app.workers}</workers>
-						<workerType>${mule.app.workerType}</workerType>
-						<businessGroup>mulesoft_spain_5</businessGroup>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>4.4.0</muleVersion>
+						<username>mulesoft_spain_5</username>
+						<password>Mulesoft_spain_5</password>
+						<applicationName>test_CICD</applicationName>
+						<environment>Sandbox</environment>
+						<workerType>MICRO</workerType>
 						<properties>
-							<anypoint.platform.client_id>${platform.client_id}</anypoint.platform.client_id>
-							<anypoint.platform.client_secret>${platform.client_secret}</anypoint.platform.client_secret>
-							<anypoint.platform.base_uri>${mule.platform.base_uri}</anypoint.platform.base_uri>
-							<env>${env}</env>
+							<key>value</key>
 						</properties>
 					</cloudHubDeployment>
-					<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>
+
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
