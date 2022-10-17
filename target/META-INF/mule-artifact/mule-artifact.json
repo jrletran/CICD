@@ -4,7 +4,7 @@
   ],
   "secureProperties": [],
   "redeploymentEnabled": true,
-  "name": "com.mycompany:cicd:1.0.0-SNAPSHOT",
+  "name": "com.mycompany:cicd:1.0.1-SNAPSHOT",
   "minMuleVersion": "4.4.0",
   "requiredProduct": "MULE",
   "classLoaderModelLoaderDescriptor": {
