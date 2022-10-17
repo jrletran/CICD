@@ -48,19 +48,16 @@
 					<cloudHubDeployment>
 						<uri>${mule.platform.base_uri}</uri>
 						<muleVersion>${cloudhub.mule.version}</muleVersion>
-						<applicationName>${cloudhub.application.prefix}-${cloudhub.application.name}-${api.version}</applicationName>
-						<environment>${cloudhub.environment}</environment>
+						<applicationName>${mule.maven.plugin.version}</applicationName>
+						<environment>${cloudhub.application.name}</environment>
 						<objectStoreV2>true</objectStoreV2>
 						<region>${cloudhub.region}</region>
 						<workers>${mule.app.workers}</workers>
 						<workerType>${mule.app.workerType}</workerType>
-						<businessGroup>RHENUS-LOGISTICS-SA\IT-IBERIA</businessGroup>
 						<properties>
 							<anypoint.platform.client_id>${platform.client_id}</anypoint.platform.client_id>
 							<anypoint.platform.client_secret>${platform.client_secret}</anypoint.platform.client_secret>
 							<anypoint.platform.base_uri>${mule.platform.base_uri}</anypoint.platform.base_uri>
-							<anypoint.platform.analytics_base_uri>https://analytics-ingest.eu1.anypoint.mulesoft.com</anypoint.platform.analytics_base_uri>
-							<anypoint.platform.config.analytics.agent.enabled>true</anypoint.platform.config.analytics.agent.enabled>
 							<env>${env}</env>
 						</properties>
 					</cloudHubDeployment>
