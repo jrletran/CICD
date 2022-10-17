@@ -32,7 +32,7 @@
 						<muleVersion>4.4.0</muleVersion>
 						<username>mulesoft_spain_5</username>
 						<password>Mulesoft_spain_5</password>
-						<applicationName>test_CICD</applicationName>
+						<applicationName>testCICD</applicationName>
 						<environment>Sandbox</environment>
 						<workerType>MICRO</workerType>
 						<properties>
