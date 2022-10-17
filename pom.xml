@@ -48,8 +48,8 @@
 					<cloudHubDeployment>
 						<uri>${mule.platform.base_uri}</uri>
 						<muleVersion>${cloudhub.mule.version}</muleVersion>
-						<applicationName>${mule.maven.plugin.version}</applicationName>
-						<environment>${cloudhub.application.name}</environment>
+						<applicationName>${cloudhub.application.name}</applicationName>
+						<environment>${cloudhub.environment}</environment>
 						<objectStoreV2>true</objectStoreV2>
 						<region>${cloudhub.region}</region>
 						<workers>${mule.app.workers}</workers>
